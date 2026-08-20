@@ -65,7 +65,7 @@ export default function AppointmentsPage() {
     async function fetchDepartments() {
       try {
         const response = await fetch(
-          "http://localhost:5000/departments"
+          "https://fatima-hospital-backend-production.up.railway.app/departments"
         );
 
         if (!response.ok) {
@@ -109,7 +109,7 @@ export default function AppointmentsPage() {
     async function fetchDoctors() {
       try {
         const response = await fetch(
-          "http://localhost:5000/doctors"
+          "https://fatima-hospital-backend-production.up.railway.app/doctors"
         );
 
         if (!response.ok) {
@@ -295,7 +295,7 @@ export default function AppointmentsPage() {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/appointments",
+        "https://fatima-hospital-backend-production.up.railway.app/appointments",
         {
           method: "POST",
 

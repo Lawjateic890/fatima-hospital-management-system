@@ -28,7 +28,7 @@ export default function Doctors() {
 
   const loadDoctors = async () => {
     try {
-      const res = await fetch("http://localhost:5000/doctors");
+      const res = await fetch("https://fatima-hospital-backend-production.up.railway.app/doctors");
       const data = await res.json();
 
       setDoctors(data.slice(0, 4));
